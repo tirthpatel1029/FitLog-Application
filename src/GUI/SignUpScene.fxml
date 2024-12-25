@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SignUpScene">
+   <children>
+      <Text layoutX="119.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Greetings New User!" textAlignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="220.0" fitWidth="292.0" layoutX="65.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="65.0">
+         <image>
+            <Image url="@../Images/FitLog_logo_image.jpeg" />
+         </image>
+      </ImageView>
+      <Text layoutX="322.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" AnchorPane.rightAnchor="222.0" />
+      <Text fx:id="invalidUsernameMessage" fill="RED" layoutX="430.0" layoutY="146.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Username" visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <TextField fx:id="usernameField" layoutX="386.0" layoutY="115.0" AnchorPane.rightAnchor="65.0" />
+      <Text layoutX="339.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height (CM):" AnchorPane.rightAnchor="222.0" />
+      <Text fx:id="invalidHeightMessage" fill="RED" layoutX="434.0" layoutY="185.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Height" visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <TextField fx:id="heightField" layoutX="386.0" layoutY="153.0" AnchorPane.rightAnchor="65.0" />
+      <Text layoutX="337.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weight (KG):" AnchorPane.rightAnchor="222.0" />
+      <Text fx:id="invalidWeightMessage" fill="RED" layoutX="433.0" layoutY="225.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Invalid Weight" visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <TextField fx:id="weightField" layoutX="386.0" layoutY="193.0" />
+      <Text layoutX="308.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" AnchorPane.rightAnchor="222.0" />
+      <Text fx:id="invalidDobMessage" fill="RED" layoutX="435.0" layoutY="263.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Date" visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="dobField" editable="false" layoutX="385.0" layoutY="232.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text layoutX="335.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" AnchorPane.rightAnchor="222.0" />
+      <Text fx:id="invalidGenderMessage" fill="RED" layoutX="422.0" layoutY="302.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Select a Gender value" visible="false">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="genderField" layoutX="385.0" layoutY="272.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="396.0" layoutY="338.0" mnemonicParsing="false" onAction="#onConfirm" prefHeight="25.0" prefWidth="106.0" text="Create Account" AnchorPane.rightAnchor="122.0" />
+      <Button layoutX="122.0" layoutY="338.0" mnemonicParsing="false" onAction="#switchToSignInScene" prefHeight="25.0" prefWidth="106.0" text="Sign In" AnchorPane.leftAnchor="122.0" />
+      <Text layoutX="130.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account?">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
