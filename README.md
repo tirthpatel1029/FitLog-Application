@@ -1,4 +1,4 @@
-# FitLog-Application
+# FitLog Application
 
 
 Build Requirements:
